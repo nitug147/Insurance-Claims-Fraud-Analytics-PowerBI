@@ -126,48 +126,6 @@ The dashboard enables business users to:
 
 ---
 
-# 📁 Repository Structure
-
-```
-Insurance-Claims-Fraud-Analytics-PowerBI
-│
-├── Dashboard
-│   └── Insurance Claims Dashboard.pbix
-│
-├── Dataset
-│   └── insurance_claims.csv
-│
-├── Images
-│   ├── Home.png
-│   ├── Executive Overview.png
-│   ├── Policy Analysis.png
-│   └── Customer Insights.png
-│
-├── Report
-│   └── Insurance Claims Dashboard.pdf
-│
-├── README.md
-└── LICENSE
-```
-
----
-
-# 🚀 How to Use
-
-1. Clone this repository
-
-```bash
-git clone https://github.com/yourusername/Insurance-Claims-Fraud-Analytics-PowerBI.git
-```
-
-2. Open the `.pbix` file using **Microsoft Power BI Desktop**.
-
-3. Refresh the dataset if required.
-
-4. Explore the dashboard using interactive slicers and filters.
-
----
-
 # 🌟 Project Highlights
 
 ✔ Interactive Dashboard Design
