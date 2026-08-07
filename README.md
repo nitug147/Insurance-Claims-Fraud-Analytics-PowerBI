@@ -112,40 +112,6 @@ Provides customer segmentation and vehicle analysis through:
 
 ---
 
-# 📷 Dashboard Preview
-
-## 🏠 Home Dashboard
-
-<p align="center">
-<img src="Images/Home.png" width="900">
-</p>
-
----
-
-## 📈 Executive Overview
-
-<p align="center">
-<img src="Images/Executive Overview.png" width="900">
-</p>
-
----
-
-## 🛡️ Policy & Fraud Analysis
-
-<p align="center">
-<img src="Images/Policy Analysis.png" width="900">
-</p>
-
----
-
-## 👥 Customer & Vehicle Insights
-
-<p align="center">
-<img src="Images/Customer Insights.png" width="900">
-</p>
-
----
-
 # 💼 Business Insights
 
 The dashboard enables business users to:
