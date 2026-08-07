@@ -1,176 +1,226 @@
-🏠 Insurance Claims & Fraud Analytics Dashboard
-📌 Project Overview
+# 🏠 Insurance Claims & Fraud Analytics Dashboard
 
-This project presents an interactive Power BI Dashboard developed to analyze insurance claims and identify fraud patterns. The dashboard enables stakeholders to monitor claim performance, evaluate policy risk, analyze customer behavior, and make data-driven business decisions.
+> **An interactive Power BI dashboard that transforms insurance claims data into actionable business insights through fraud detection, policy analysis, customer segmentation, and executive-level KPI reporting.**
 
-The solution transforms raw insurance claim data into meaningful visual insights through KPIs, interactive charts, slicers, and business intelligence reports.
+---
 
-🎯 Objectives
-Monitor insurance claim performance
-Detect fraudulent insurance claims
-Analyze policy-wise performance
-Study customer demographics
-Analyze vehicle claim patterns
-Support business decision making
-Dataset Information
-Attribute	Details
-Domain	Insurance Claims
-Records	1000
-Features	39
-Analysis Period	January – February
-Tool Used	Power BI
+## 📌 Project Overview
 
-The dashboard summarizes 1000 insurance claim records across 39 attributes for the January–February analysis period.
+The **Insurance Claims & Fraud Analytics Dashboard** is designed to help insurance companies monitor claim performance, identify fraudulent activities, evaluate policy risks, and understand customer behavior through interactive visualizations.
 
-Dashboard Pages
-1️⃣ Home Dashboard
+The dashboard consolidates multiple analytical views into a single reporting solution, enabling business users to make informed decisions quickly.
 
-Contains
+---
 
-Total Claims
-Total Claim Amount
-Average Claim Amount
-Fraud Percentage
-Dashboard Navigation
-Dataset Summary
-Dashboard Objectives
-2️⃣ Executive Overview
+## 🎯 Objectives
 
-Provides
+- Monitor overall insurance claim performance
+- Detect fraudulent insurance claims
+- Analyze policy-wise claim distribution
+- Identify high-risk incidents and policies
+- Understand customer demographics
+- Analyze vehicle-related claim patterns
+- Enable data-driven decision making
 
-Monthly Claim Trend
-Monthly Claim Amount
-Monthly Claim Volume
-Average Claim Amount
-Month Comparison
-Interactive Filters
+---
 
-Business Insights
+## 📊 Dashboard Overview
 
-Financial exposure
-Monthly trends
-Average claim severity
-Fraud percentage
+### 🏠 Home Dashboard
+Provides a complete summary of the project including:
 
-These visualizations and insights are described on the Executive Overview page.
+- Project Overview
+- Dashboard Objectives
+- Dataset Summary
+- Navigation Panel
+- KPI Cards
 
-3️⃣ Policy & Fraud Analysis
+---
 
-Includes
+### 📈 Executive Overview
 
-Claim Amount by Policy
-Fraud vs Non-Fraud
-High Cost Policy Distribution
-Fraud Rate by Incident Type
-Fraud Rate by Policy Type
-Policy Filters
-Incident Filters
+Provides high-level business insights through:
 
-Business Insights
+- Monthly Claim Amount Trend
+- Monthly Claim Volume
+- Average Claim Amount
+- Monthly Comparison
+- Executive KPIs
+- Interactive Filters
 
-Highest claim policies
-Fraud comparison
-Incident analysis
-Risk management
+---
 
-These elements appear in the Policy & Fraud Analysis section.
+### 🛡️ Policy & Fraud Analysis
 
-4️⃣ Customer & Vehicle Insights
+Focuses on fraud detection and policy performance.
 
-Includes
+Visualizations include:
 
-Claim Amount by Gender
-Education Analysis
-Occupation Analysis
-Vehicle Make Analysis
-Vehicle Year Trends
-Relationship Status
+- Claim Amount by Policy Type
+- Fraud vs Non-Fraud Distribution
+- Fraud Rate by Policy
+- Fraud Rate by Incident Type
+- High Cost Policy Distribution
 
-Business Insights
+---
 
-Customer demographics
-Vehicle analysis
-Manufacturing trends
-Customer relationships
+### 👥 Customer & Vehicle Insights
 
-These charts and insights are shown on the Customer & Vehicle Insights page.
+Provides customer segmentation and vehicle analysis through:
 
-KPIs
+- Claim Amount by Gender
+- Education Level Analysis
+- Occupation Analysis
+- Vehicle Make Distribution
+- Vehicle Manufacturing Year
+- Relationship Status Analysis
 
-✔ Total Claims
+---
 
-✔ Total Claim Amount
+# 📊 Key Performance Indicators (KPIs)
 
-✔ Average Claim Amount
+| KPI | Description |
+|------|-------------|
+| Total Claims | Total number of insurance claims |
+| Total Claim Amount | Overall claim value |
+| Average Claim Amount | Average value per claim |
+| Fraud Percentage | Percentage of fraudulent claims |
 
-✔ Fraud Percentage
+---
 
-Dashboard Features
-Interactive Navigation Buttons
-KPI Cards
-Slicers
-Dynamic Filtering
-Drill-down Analysis
-Business Insights Section
-Executive Dashboard
-Fraud Analytics
-Customer Analytics
-Policy Analytics
-Power BI Skills Used
-Power Query
-Data Cleaning
-Data Transformation
-Data Modeling
-Relationships
-DAX Measures
-Interactive Slicers
-KPI Cards
-Navigation Buttons
-Line Charts
-Bar Charts
-Donut Charts
-Treemap
-Column Charts
-Business Intelligence Reporting
-DAX Measures Used
-Total Claims = COUNT(Insurance[claim_number])
+# 📂 Dataset Information
 
-Total Claim Amount = SUM(Insurance[total_claim_amount])
+| Attribute | Details |
+|------------|---------|
+| Domain | Insurance Claims |
+| Total Records | 1000 |
+| Total Features | 39 |
+| Analysis Period | January – February |
+| Visualization Tool | Microsoft Power BI |
 
-Average Claim Amount =
-AVERAGE(Insurance[total_claim_amount])
+---
 
-Fraud Claims =
-CALCULATE(
-COUNTROWS(Insurance),
-Insurance[fraud_reported]="Y"
-)
+# 🛠️ Tools & Technologies
 
-Fraud % =
-DIVIDE(
-[Fraud Claims],
-[Total Claims]
-)
+- Microsoft Power BI
+- Power Query
+- DAX
+- Data Modeling
+- Data Visualization
+- Interactive Slicers
+- KPI Cards
 
-(Adjust the table/column names to match your PBIX model.)
+---
 
-Business Insights
-Insurance claim trends were analyzed to understand monthly claim behavior.
-Fraudulent claims were monitored using fraud percentage and fraud distribution.
-Policy types with higher claim amounts were identified.
-Incident categories contributing to fraudulent claims were analyzed.
-Customer demographics and vehicle attributes were studied to identify high-risk claim patterns.
-Interactive filters enable dynamic exploration across policy type, gender, vehicle make, incident type, fraud status, and month.
-Tools Used
-Microsoft Power BI
-Power Query
-DAX
-Data Modeling
-Microsoft Excel
-Future Improvements
-Predictive Fraud Detection
-Machine Learning Integration
-Real-Time Dashboard
-SQL Database Integration
-Power BI Service Deployment
-Automated Data Refresh
+# 📷 Dashboard Preview
+
+## 🏠 Home Dashboard
+
+<p align="center">
+<img src="Images/Home.png" width="900">
+</p>
+
+---
+
+## 📈 Executive Overview
+
+<p align="center">
+<img src="Images/Executive Overview.png" width="900">
+</p>
+
+---
+
+## 🛡️ Policy & Fraud Analysis
+
+<p align="center">
+<img src="Images/Policy Analysis.png" width="900">
+</p>
+
+---
+
+## 👥 Customer & Vehicle Insights
+
+<p align="center">
+<img src="Images/Customer Insights.png" width="900">
+</p>
+
+---
+
+# 💼 Business Insights
+
+The dashboard enables business users to:
+
+- Detect potentially fraudulent insurance claims
+- Monitor claim trends over time
+- Compare policy performance
+- Identify high-value claims
+- Analyze customer demographics
+- Study vehicle-related claim patterns
+- Improve operational decision-making
+
+---
+
+# 📁 Repository Structure
+
+```
+Insurance-Claims-Fraud-Analytics-PowerBI
+│
+├── Dashboard
+│   └── Insurance Claims Dashboard.pbix
+│
+├── Dataset
+│   └── insurance_claims.csv
+│
+├── Images
+│   ├── Home.png
+│   ├── Executive Overview.png
+│   ├── Policy Analysis.png
+│   └── Customer Insights.png
+│
+├── Report
+│   └── Insurance Claims Dashboard.pdf
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🚀 How to Use
+
+1. Clone this repository
+
+```bash
+git clone https://github.com/yourusername/Insurance-Claims-Fraud-Analytics-PowerBI.git
+```
+
+2. Open the `.pbix` file using **Microsoft Power BI Desktop**.
+
+3. Refresh the dataset if required.
+
+4. Explore the dashboard using interactive slicers and filters.
+
+---
+
+# 🌟 Project Highlights
+
+✔ Interactive Dashboard Design
+
+✔ Fraud Detection Analytics
+
+✔ Policy Performance Analysis
+
+✔ Customer Segmentation
+
+✔ Executive KPI Reporting
+
+✔ Business Intelligence Reporting
+
+✔ Interactive Filters & Navigation
+
+---
+
+
+---
+
+## ⭐ If you found this project helpful, consider giving it a **Star**!
