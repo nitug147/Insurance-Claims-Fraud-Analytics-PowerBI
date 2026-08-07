@@ -1,7 +1,8 @@
 🏠 Insurance Claims & Fraud Analytics Dashboard
-
 📌 Project Overview
+
 This project presents an interactive Power BI Dashboard developed to analyze insurance claims and identify fraud patterns. The dashboard enables stakeholders to monitor claim performance, evaluate policy risk, analyze customer behavior, and make data-driven business decisions.
+
 The solution transforms raw insurance claim data into meaningful visual insights through KPIs, interactive charts, slicers, and business intelligence reports.
 
 🎯 Objectives
@@ -11,20 +12,21 @@ Analyze policy-wise performance
 Study customer demographics
 Analyze vehicle claim patterns
 Support business decision making
-
 Dataset Information
-| Attribute       | Details            |
-| --------------- | ------------------ |
-| Domain          | Insurance Claims   |
-| Records         | 1000               |
-| Features        | 39                 |
-| Analysis Period | January – February |
-| Tool Used       | Power BI           |
+Attribute	Details
+Domain	Insurance Claims
+Records	1000
+Features	39
+Analysis Period	January – February
+Tool Used	Power BI
+
 The dashboard summarizes 1000 insurance claim records across 39 attributes for the January–February analysis period.
 
 Dashboard Pages
 1️⃣ Home Dashboard
+
 Contains
+
 Total Claims
 Total Claim Amount
 Average Claim Amount
@@ -32,9 +34,10 @@ Fraud Percentage
 Dashboard Navigation
 Dataset Summary
 Dashboard Objectives
-
 2️⃣ Executive Overview
+
 Provides
+
 Monthly Claim Trend
 Monthly Claim Amount
 Monthly Claim Volume
@@ -43,14 +46,18 @@ Month Comparison
 Interactive Filters
 
 Business Insights
+
 Financial exposure
 Monthly trends
 Average claim severity
 Fraud percentage
+
 These visualizations and insights are described on the Executive Overview page.
 
 3️⃣ Policy & Fraud Analysis
+
 Includes
+
 Claim Amount by Policy
 Fraud vs Non-Fraud
 High Cost Policy Distribution
@@ -60,14 +67,18 @@ Policy Filters
 Incident Filters
 
 Business Insights
+
 Highest claim policies
 Fraud comparison
 Incident analysis
 Risk management
+
 These elements appear in the Policy & Fraud Analysis section.
 
 4️⃣ Customer & Vehicle Insights
+
 Includes
+
 Claim Amount by Gender
 Education Analysis
 Occupation Analysis
@@ -76,16 +87,22 @@ Vehicle Year Trends
 Relationship Status
 
 Business Insights
+
 Customer demographics
 Vehicle analysis
 Manufacturing trends
 Customer relationships
+
 These charts and insights are shown on the Customer & Vehicle Insights page.
 
 KPIs
+
 ✔ Total Claims
+
 ✔ Total Claim Amount
+
 ✔ Average Claim Amount
+
 ✔ Fraud Percentage
 
 Dashboard Features
@@ -99,7 +116,6 @@ Executive Dashboard
 Fraud Analytics
 Customer Analytics
 Policy Analytics
-
 Power BI Skills Used
 Power Query
 Data Cleaning
@@ -116,6 +132,27 @@ Donut Charts
 Treemap
 Column Charts
 Business Intelligence Reporting
+DAX Measures Used
+Total Claims = COUNT(Insurance[claim_number])
+
+Total Claim Amount = SUM(Insurance[total_claim_amount])
+
+Average Claim Amount =
+AVERAGE(Insurance[total_claim_amount])
+
+Fraud Claims =
+CALCULATE(
+COUNTROWS(Insurance),
+Insurance[fraud_reported]="Y"
+)
+
+Fraud % =
+DIVIDE(
+[Fraud Claims],
+[Total Claims]
+)
+
+(Adjust the table/column names to match your PBIX model.)
 
 Business Insights
 Insurance claim trends were analyzed to understand monthly claim behavior.
@@ -124,14 +161,12 @@ Policy types with higher claim amounts were identified.
 Incident categories contributing to fraudulent claims were analyzed.
 Customer demographics and vehicle attributes were studied to identify high-risk claim patterns.
 Interactive filters enable dynamic exploration across policy type, gender, vehicle make, incident type, fraud status, and month.
-
 Tools Used
 Microsoft Power BI
 Power Query
 DAX
 Data Modeling
 Microsoft Excel
-
 Future Improvements
 Predictive Fraud Detection
 Machine Learning Integration
@@ -139,5 +174,3 @@ Real-Time Dashboard
 SQL Database Integration
 Power BI Service Deployment
 Automated Data Refresh
-
-
